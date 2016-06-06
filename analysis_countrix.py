@@ -83,7 +83,7 @@ class AnalysisCountrix:
 
         """
 
-        with open('Data/geography.csv', 'rb') as csv_file:
+        with open('data/geography.csv', 'rb') as csv_file:
             reader = csv.reader(csv_file)
             # parse geography file storing the information of each country
             for row in reader:
@@ -97,7 +97,7 @@ class AnalysisCountrix:
 
         """
 
-        with open('Data/xapi_statements_countrix.json') as data_file:
+        with open('data/xapi_statements_countrix.json') as data_file:
             with open('analysis_players.csv', 'wb') as csv_players:
                 # load data
                 data = json.load(data_file)
